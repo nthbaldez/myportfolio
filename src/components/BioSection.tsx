@@ -34,7 +34,7 @@ const BioContainer = styled.section`
       color: var(--gray-300);
       line-height: 2rem;
       font-weight: 400;
-      font-size: 22px;
+      font-size: 1.375rem;
     }
   } 
 

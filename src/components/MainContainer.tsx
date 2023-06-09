@@ -11,7 +11,7 @@ import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const SectionIntroductionContainer = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   padding: 6rem 2rem;
 
