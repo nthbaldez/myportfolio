@@ -1,68 +1,12 @@
-"use client"
 
-import styled from "styled-components"
-import WriterMachine from "./WriterMachine";
-import logo from '../assets/logo.svg';
+import WriterMachine from "../WriterMachine/WriterMachine";
+import logo from '../../assets/logo.svg';
 import Image from 'next/image';
 import { BsGithub } from 'react-icons/bs';
 import { FiInstagram } from 'react-icons/fi';
 import { TfiLinkedin, TfiEmail } from 'react-icons/tfi';
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-
-const SectionIntroductionContainer = styled.section`
-  width: 100%;
-  height: 80vh;
-  position: relative;
-  padding: 6rem 2rem;
-
-  > div {
-    display: flex;
-    justify-content: center;
-  }
-
-  button {
-    background: transparent;
-    border: none;
-    border-radius: 100%;
-    font-size: 3rem;
-    display: flex;
-    align-items: center;
-    transition: all 0.2s;
-    margin: 40px auto;
-
-    &:hover {
-      background: rgba(97, 96, 96, 0.568);
-    }
-
-    svg {
-      color: white;
-    }
-  }
-
-
-  animation: fade-in 3s;
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 100;
-    }
-  }
-
-`
-
-const SocialMediaContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-
-  a {
-    padding: 0.875rem;
-  }
-`
+import { SectionIntroductionContainer, SocialMediaContainer } from "./styles";
 
 const iconsStyles = {
   color: "white",
