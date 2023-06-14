@@ -20,22 +20,51 @@ export const ProjectsListContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 200px;
-  gap: 5rem;
-
+  gap: 7rem;
 `
 
-export const Card = styled.div`
+export const Card = styled.a`
   display: flex;
   flex-direction: column;
   -webkit-box-pack: start;
-  justify-content: flex-start;
-  padding: 3rem 4rem;
+  justify-content: space-between;
+  padding: 2rem;
   border: 1px solid rgb(60, 60, 60);
   border-radius: 0.5rem;
+  height: 280px;
+  transition: transform 0.2s;
+  
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.025);
+  }
 
-  h2 {
-    font-size: 1rem;
-    color: var(--orange-400);
+  header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    h2 {
+      font-size: 1rem;
+      color: var(--orange-400);
+    }
+  }
+
+  footer {
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    span {
+      background-color: var(--gray-200);
+      padding: 8px;
+      text-align: center;
+      border-radius: 16px;
+      color: #000;
+    }
   }
 
 `

@@ -4,7 +4,11 @@ export default function Header() {
 
   const takeTotheNextSection = (section: string) => {
     const element = document.getElementById(section);
-    element?.scrollIntoView({block: "center", behavior: "smooth"});
+    if (section == 'projects') {
+      element?.scrollIntoView({block: "start", behavior: "smooth"});
+    } else {
+      element?.scrollIntoView({block: "center", behavior: "smooth"});
+    }
   }
 
   return (
@@ -22,7 +26,7 @@ export default function Header() {
               </a>
             </li> */}
             <li>
-              <a href="#projects">
+              <a onClick={() => takeTotheNextSection('projects')}>
                 Projetos
               </a>
             </li>

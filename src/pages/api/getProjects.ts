@@ -1,4 +1,3 @@
-// import { Octokit } from "octokit";
 
 import { NextApiRequest, NextApiResponse } from "next";
 
@@ -22,6 +21,16 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                     url
                     createdAt
                     updatedAt
+                    repositoryTopics(first: 4) {
+                      edges {
+                        node {
+                          topic {
+                            id
+                            name
+                          }
+                        }
+                      }
+                    } 
                   }
                 }
               }
