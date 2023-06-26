@@ -7,7 +7,6 @@ export const ProjectsSectionContainer = styled.section`
   align-items: center;
   margin-top: 4rem;
   padding: 2rem 4rem;
-  width: 80%;
 
   > h2 {
     color: var(--orange-400);
@@ -15,12 +14,32 @@ export const ProjectsSectionContainer = styled.section`
     font-size: 3rem;
     margin: 2rem;
   }
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 80%;
+  }
 `
 export const ProjectsListContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 200px;
-  gap: 7rem;
+  height: 100vh;
+
+  @media (min-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 300px;
+    gap: 2rem;
+  }
+  
 `
 
 export const Card = styled.a`
@@ -31,12 +50,12 @@ export const Card = styled.a`
   padding: 2rem;
   border: 1px solid rgb(60, 60, 60);
   border-radius: 0.5rem;
-  height: 280px;
+  
   transition: transform 0.2s;
   
   &:hover {
     cursor: pointer;
-    transform: scale(1.025);
+    opacity: 0.8;
   }
 
   header {
@@ -65,6 +84,15 @@ export const Card = styled.a`
       border-radius: 16px;
       color: #000;
     }
+  }
+
+  @media (min-width: 768px) {
+    height: 280px;
+    width: 100%;
+  }
+
+  @media (min-width: 320px) {
+    width: 100%;
   }
 
 `

@@ -28,6 +28,7 @@ export const SectionIntroductionContainer = styled.section`
     svg {
       color: white;
     }
+
   }
 
 
