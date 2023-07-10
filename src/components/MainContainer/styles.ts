@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const SectionIntroductionContainer = styled.section`
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   position: relative;
   padding: 6rem 2rem;
 

@@ -38,8 +38,6 @@ export function ProjectsSection() {
     .then(data => setRepos(data))
   }, []);
 
-  console.log(repos);
-
   return (
     <ProjectsSectionContainer>
       <h2 id="projects">Projetos</h2>
