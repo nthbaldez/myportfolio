@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const ProjectsSectionContainer = styled.section`
   color: white;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;

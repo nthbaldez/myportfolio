@@ -8,9 +8,11 @@ import { ProjectsSection } from '../components/ProjectsSection/ProjectsSection'
 
 const AppContainer = styled.div`
   width: 100%;
-  display: flex;
+  margin: 0 auto;
+  /* display: flex; */
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `
 
 export default function Home() {

@@ -6,6 +6,10 @@ export const WriterMachineContainer = styled.div`
   
   h2 {
     font-weight: 200;
+    font-size: 1rem;
+  }
+
+  @media (min-width: 768px) {
     font-size: 2rem;
   }
 `
