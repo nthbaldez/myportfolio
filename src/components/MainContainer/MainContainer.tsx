@@ -36,10 +36,6 @@ export default function MainContainer() {
         <a href="https://www.linkedin.com/in/nathan-baldez-380684197/">
           <TfiLinkedin style={iconsStyles}/>
         </a>
-
-        <a href="https://www.instagram.com/nthbaldez/">
-          <FiInstagram style={iconsStyles}/>
-        </a>
       </SocialMediaContainer>
 
       <button onClick={() => takeTotheNextSection()}>
