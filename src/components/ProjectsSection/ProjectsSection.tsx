@@ -32,10 +32,15 @@ export function ProjectsSection() {
 
   const [ repos, setRepos ] = useState<Repo[]>([])
 
-  useEffect(() => { 
-    fetch("/api/getProjects")
-    .then(response => response.json())
-    .then(data => setRepos(data))
+  useEffect(() => {
+    async function fetcher() {
+      const res = await fetch("/api")
+      const data = await res.json()
+
+      setRepos(data)
+    }
+
+    fetcher()
   }, []);
 
   return (
